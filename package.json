@@ -1,0 +1,15 @@
+{
+  "name": "metro-station-platform-management",
+  "version": "1.0.0",
+  "description": "WebSocket bridge and real-time dashboard for metro station simulation",
+  "main": "var4_socket_bridge.js",
+  "dependencies": {
+    "ws": "^8.0.0",
+    "zeromq": "^5.0.0"
+  },
+  "scripts": {
+    "start": "node var4_socket_bridge.js"
+  },
+  "author": "AKurtz",
+  "license": "MIT"
+}
