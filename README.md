@@ -16,6 +16,8 @@ The simulation includes a physical interface with four LED lamps connected to th
 3. **Train Departed**:
    - LEDs remain continuously lit to indicate the train is in transit.
 
+![image](https://github.com/user-attachments/assets/ca3f5d21-d058-4aaf-8bcf-8e6bcf2d3f07)
+
 ## **Station Master’s Role**
 
 The station master interacts with the system using four switches connected to the PLC’s inputs (I0 to I3). Their responsibilities include managing train operations through the following sequence of steps:
@@ -67,6 +69,8 @@ This Node.js script bridges the Python backend with a real-time visualization da
 - **Dynamic Dashboard**:
   - Displays the status of each platform (`idle`, `arriving`, `stopped`, `ready_to_depart`, `departing`) with intuitive visual indicators.
 
+<img width="990" alt="Screenshot 2024-11-25 at 11 36 17" src="https://github.com/user-attachments/assets/b8a3e856-8016-4f9e-8833-97d4c26a5025">
+
 ## **Workflow**
 1. **Simulation and Broadcasting**:
    - The Python script simulates train operations and broadcasts platform statuses using ZeroMQ.
@@ -106,10 +110,5 @@ This Node.js script bridges the Python backend with a real-time visualization da
 1. Start the Python script (`var4B.py`) to simulate train operations and publish platform statuses.
 2. Launch the Node.js WebSocket server and dashboard (`var4_socket_bridge.js`).
 3. Access the dashboard at `http://localhost:3000` to monitor platform statuses in real-time.
-
-## **Future Enhancements**
-- Extend simulation to include more platforms or dynamic schedules.
-- Integrate analytics for platform usage and train scheduling optimization.
-- Develop a mobile-friendly interface for real-time monitoring.
 
 This project demonstrates a modern approach to industrial automation, using Python to extend the capabilities of traditional PLC systems. By combining PLC hardware with external logic and visualization tools, the system achieves enhanced flexibility, scalability, and operational efficiency.
